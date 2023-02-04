@@ -1,1 +1,206 @@
+<!DOCTYPE html>
+<html lang="hu">
 
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Józsi bácsi étterme</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="stilus.css">
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<div class="container-fluid">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link active border menu" href="#Menu">Heti menü</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#restaurant">Éttermünk</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#Kapcsolat">Kapcsolat</a>
+					</li>
+					<li class="nav-item cart">
+						<a data-bs-toggle="modal" data-bs-target="#myModal" href="#"><img src="images/shopping_cart_FILL1_wght300_GRAD200_opsz40.svg" alt="y"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="row">
+		<div class="col-sm-2">
+			<center> <span class="phonenumber">Rendelj most: 6666-6666-6666</span></center>
+		</div>
+		<div class="col-sm-8 ">
+			<div class="page">
+				<center class="🍳"> <img class="decor" src="images/decor.jpg" alt="y"> Józsi bácsi étterme <img class="decor" src="images/decor.jpg" alt="y"> </center>
+				<hr>
+				<p id="Menu">Heti menü</p>
+				<p class="right">Áraink: Menü árunk: 2130.- Ft Csak főétel: 1350.- Ft</p>
+
+				<p id="Name"></p>
+
+				<p class="days">-Hétfő-</p>
+				<p style="font-size: 16px;">Étel neve</p>
+
+				<div class="🍕">
+					<label for="checkbox1" class="food">Fokhagymakrém leves. <img class="foodpic" src="images/fokhagymakremleves-1.jpg" alt=""></label>
+					<input id="checkbox1" name="checkbox" type="checkbox">
+				</div>
+				<div class="🍕">
+					<label for="checkbox2" class="food">Rántott karaj szelet sült burgonyával <img class="foodpic" src="images/rantotthus.jpg" alt=""></label>
+					<input id="checkbox2" name="checkbox" type="checkbox">
+				</div>
+
+				<hr>
+
+				<p class="days">-Kedd-</p>
+				<p style="font-size: 16px;">Étel neve</p>
+
+				<div class="🍕">
+					<label for="checkbox3" class="food">Egres leves <img class="foodpic" src="images/egres.jpg" alt=""></label>
+					<input id="checkbox3" name="checkbox" type="checkbox">
+
+				</div>
+				<div class="🍕">
+					<label for="checkbox4" class="food">Debreceni töltött káposzta<img class="foodpic" src="images/debreceni_toltott.jpg" alt=""></label>
+					<input id="checkbox4" name="checkbox" type="checkbox">
+
+				</div>
+
+				<hr>
+
+				<p class="days">-Szerda-</p>
+				<p style="font-size: 16px;">Étel neve</p>
+
+				<div class="🍕">
+					<label for="checkbox5" class="food">Korhelyleves <img class="foodpic" src="images/korhely.jpg" alt=""></label>
+					<input id="checkbox5" name="checkbox" type="checkbox">
+
+				</div>
+				<div class="🍕">
+					<label for="checkbox6" class="food">Csikós tokány főtt tésztával.<img class="foodpic" src="images/tokany.jpg" alt=""></label>
+					<input id="checkbox6" name="checkbox" type="checkbox">
+				</div>
+
+				<hr>
+
+				<p class="days">-Csütörtök-</p>
+				<p style="font-size: 16px;">Étel neve</p>
+
+				<div class="🍕">
+					<label for="checkbox7" class="food">Paradicsom leves <img class="foodpic" src="images/paradicsom_leves.jpg" alt=""></label>
+					<input id="checkbox7" name="checkbox" type="checkbox">
+				</div>
+				<div class="🍕">
+					<label for="checkbox8" class="food">Mediterrán csirke <img class="foodpic" src="images/mediterran_tepsis_csirke01.jpg" alt=""></label>
+					<input id="checkbox8" name="checkbox" type="checkbox">
+
+				</div>
+
+				<hr>
+
+				<p class="days">-Péntek-</p>
+				<p style="font-size: 16px;">Étel neve</p>
+
+				<div class="🍕">
+					<label for="checkbox9" class="food">Zölbableves<img class="foodpic" src="images/zoldbab.jpg" alt=""></label>
+					<input id="checkbox9" name="checkbox" type="checkbox">
+				</div>
+				<div class="🍕">
+					<label for="checkbox10" class="food">Gombapörkölt <img class="foodpic" src="images/tejfolos-gombaporkolt.jpg" alt=""></label>
+					<input id="checkbox10" name="checkbox" type="checkbox">
+				</div>
+
+
+				<button data-bs-toggle="modal" data-bs-target="#myModal" onclick="pipa1()" type="button" class="gomb btn btn-light">Rendel</button>
+				<br>
+
+				<div id="restaurant">
+					<hr>
+
+					<p>Éttermünkről</p>
+					<p class="center">Józsi bácsi irányításával garantáljuk, hogy Éttermünkben gyors kiszolgálással jól lakhatsz! Ez az étterem más, mint a többi étterem.
+						<br>
+						NYITVA TARTÁS:
+						Hétfő – Péntek: 09.00 – 18.30
+						<br>
+
+						Debrecen Stop Shop Bevásárlóközpont,
+						4031 Debrecen, Kishatár út 34.
+						Tel.: 6666-6666-6666
+						E-mail: info@kedvencJózsibácsi.hu
+						<br>
+						RENDELÉSFELVÉTEL:
+						Hétfő – Péntek: 9.00 – 16.00 között
+						<br>
+						KISZÁLLÍTÁS:
+						Hétfő – Péntek: 11.00 – 17.00 között
+						<br>
+						A kiszállítás 300 Ft.
+						<br>
+						Menü csomagolási díja 200 Ft.
+						<br>
+					</p>
+
+				</div>
+				<div id="Kapcsolat">
+					<hr>
+					<p>Kapcsolat</p>
+					<p>Debrecen Stop Shop Bevásárlóközpont,
+						4031 Debrecen, Kishatár út 34.
+						Tel.: +36-30/178-9644
+						E-mail: info@kedvencbisztrodebrecen.hu
+					</p>
+
+				</div>
+
+
+				<!-- The Modal -->
+				<div class="modal" id="myModal">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+
+							<!-- Modal Header -->
+							<div class="modal-header">
+								<h4 class="modal-title">Kosár tartalma</h4>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+							</div>
+
+							<!-- Modal body -->
+							<div id="Mbody" class="modal-body">
+								<p>Rendelések:</p>
+							</div>
+
+							<!-- Modal footer -->
+							<div class="modal-footer">
+								<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="col-sm-2"></div>
+
+	</div>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="sc.js"></script>
+</body>
+
+
+</html>
