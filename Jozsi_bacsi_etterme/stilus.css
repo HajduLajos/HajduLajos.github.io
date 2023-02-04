@@ -1,0 +1,78 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(/images/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.page {
+	background-color: white;
+}
+.🍳 {
+	font-size: 70px;
+	font-family: 'Times New Roman', Times, serif;
+	font-style: italic;
+}
+.decor {
+	height: 150px;
+}
+.menu:hover {
+	background-color: brown;
+}
+.phonenumber {
+	background-color: rgb(206, 34, 34);
+	font-size: 40px;
+}
+.days {
+	font-size: 20px;
+	color: red;
+	margin-bottom: 0px;
+}
+.foodpic {
+	height: 50px;
+	margin-left: 20px;
+}
+.right {
+	text-align: right;
+}
+.cart {
+	margin-left: auto;
+}
+.cart:hover {
+	background-color: brown;
+}
+.navbar-nav {
+	width: 100%;
+}
+.rendeles {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.gomb {
+	display: block;
+	margin: auto;
+	font-size: 30px;
+	background-color: blanchedalmond;
+}
+.🍕 {
+	display: flex;
+	flex-direction: row;
+	gap: 50px;
+}
+
+@media (max-width: 600px) {
+	.🍳 {
+		display: flex;
+		flex-direction: column;
+	}
+	.decor {
+		height: 300px;
+	}
+}
+.center {
+	margin: auto;
+}
