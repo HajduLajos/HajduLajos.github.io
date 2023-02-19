@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Étel sorsoló</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="stilus.css">
+</head>
+
+<body>
+
+
+
+
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<div class="container-fluid">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link active" href="index.html">Sorsoló</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="index2.html">adatok</a>
+				</li>
+
+			</ul>
+		</div>
+	</nav>
+
+	<div class="grid-container">
+	</div>
+
+	<script>
+		var etelek = [
+			{
+				nev: 'Rántott csirkemell',
+				kep: '1.jpg',
+				ido: '45 perc',
+				kaloria: '220 kcal/100g'
+			},
+			{
+				nev: 'Gyümölcsös joghurt',
+				kep: '2.jpg',
+				ido: '10 perc',
+				kaloria: '110 kcal/100g'
+			},
+			{
+				nev: 'Sült zöldségek',
+				kep: '3.jpg',
+				ido: '30 perc',
+				kaloria: '80 kcal/100g'
+			},
+			{
+				nev: 'Gulyásleves',
+				kep: '4.jpg',
+				ido: '120 perc',
+				kaloria: '160 kcal/100g'
+			},
+			{
+				nev: 'Csirkepaprikás',
+				kep: '5.jpg',
+				ido: '60 perc',
+				kaloria: '210 kcal/100g'
+			},
+			{
+				nev: 'Rizottó',
+				kep: '6.jpg',
+				ido: '30 perc',
+				kaloria: '130 kcal/100g'
+			},
+			{
+				nev: 'Tonhalas saláta',
+				kep: '7.jpg',
+				ido: '20 perc',
+				kaloria: '90 kcal/100g'
+			},
+			{
+				nev: 'Csoki sütemény',
+				kep: '8.jpg',
+				ido: '40 perc',
+				kaloria: '280 kcal/100g'
+			},
+			{
+				nev: 'Zabkása',
+				kep: '9.jpg',
+				ido: '15 perc',
+				kaloria: '120 kcal/100g'
+			},
+			{
+				nev: 'Csirkés saláta',
+				kep: '10.jpg',
+				ido: '25 perc',
+				kaloria: '150 kcal/100g'
+			}
+		];
+
+		const container = document.querySelector(".grid-container");
+
+		for (let i = 0; i < etelek.length; i++) {
+			const item = document.createElement("div");
+			item.classList.add("grid-item");
+			item.innerHTML = `
+    <h2>${etelek[i].nev}</h2>
+    <img class="img-fluid" src="kepek/${etelek[i].kep}" alt="${etelek[i].nev}">
+    <p>Elkészítési idő: ${etelek[i].ido}</p>
+    <p>Kalória szám: ${etelek[i].kaloria}</p>
+  `;
+			container.appendChild(item);
+		}
+	</script>
+</body>
+
+</html>
