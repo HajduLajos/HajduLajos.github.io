@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script src="filmek.js"></script>
+
+</head>
+<body>
+    
+<table id="tablazat">
+
+</table>
+
+
+
+    <script>
+        console.log(filmek)
+
+        for (const elem of filmek) {
+            let tr =document.createElement("tr")
+            document.getElementById("tablazat").appendChild("tr")
+            var td = document.createElement("td")
+            tr.appendChild(td)
+            td.innerHTML = elem.Title
+            var td2 = document.createElement("td")
+            tr.appendChild(td2)
+            var kep = document.createElement("img")
+            kep.setAttribute("src",elem.Images[0])
+            td2.appendChild(kep)
+            kep.style.width = "600px";
+        }
+
+    </script>
+
+</body>
+</html>
