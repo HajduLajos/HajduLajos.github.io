@@ -1,0 +1,14 @@
+th{
+    font-size: 23px;
+    border: solid 1px black;
+    text-align: center;
+
+}
+#egesz{
+    background-color: black;
+    background-repeat: no-repeat;
+    padding: 15px;
+}
+td{
+    text-align: center;
+}
